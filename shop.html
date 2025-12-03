@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>H.V | Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="content.css" />
+</head>
+<body>
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="selection.html">H.V</a>
+        <span class="logo-subtitle">Hate is Virus</span>
+      </div>
+      <nav class="header-nav">
+        <a href="about.html" class="nav-link">About Virus</a>
+        <a href="company.html" class="nav-link">Company</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="cart.html" class="nav-link cart-link">
+          <span class="cart-icon">CART</span>
+          <span class="cart-count" id="header-cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="noise-canvas"></canvas>
+  <div class="scan-line"></div>
+  
+  <div class="content-page">
+    <div class="content-wrapper">
+      <h1 class="content-title glitch-text" data-text="Protection Equipment">Protection Equipment</h1>
+      
+      <!-- SEARCH BAR -->
+      <div class="shop-search-container">
+        <div class="search-wrapper">
+          <input type="text" class="shop-search-input" id="shop-search" placeholder="Search products..." />
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="wishlist-toggle" id="wishlist-toggle" title="View Wishlist">
+          <span class="wishlist-icon">♡</span>
+          <span class="wishlist-count" id="wishlist-count">0</span>
+        </div>
+      </div>
+      
+      <div class="shop-grid" id="shop-grid">
+        <!-- Product 1: Test Kit -->
+        <div class="product-card" data-product-name="Infection Test Kit" data-product-category="test">
+          <div class="product-image">
+            <img src="assets/img/kit.png" alt="Test Kit" />
+            <button class="wishlist-btn" data-product="Infection Test Kit" title="Add to Wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name glitch-random">Infection Test Kit</h3>
+            <p class="product-description">Detect early signs of digital virus infection</p>
+            <div class="product-price">$18.99</div>
+            <p class="shipping-notice">These products will be shipped sequentially after February 28, 2028.</p>
+            <div class="product-actions">
+              <button class="product-btn view-details-btn" data-product="Infection Test Kit">View Details</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Mask -->
+        <div class="product-card" data-product-name="Digital Protection Mask" data-product-category="protection">
+          <div class="product-image">
+            <img src="assets/img/mask.png" alt="Protection Mask" />
+            <button class="wishlist-btn" data-product="Digital Protection Mask" title="Add to Wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name glitch-random">Digital Protection Mask</h3>
+            <p class="product-description">Filter out toxic content and hate speech</p>
+            <div class="product-price">$18.99</div>
+            <p class="shipping-notice">These products will be shipped sequentially after February 28, 2028.</p>
+            <div class="product-actions">
+              <button class="product-btn view-details-btn" data-product="Digital Protection Mask">View Details</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Can -->
+        <div class="product-card" data-product-name="Emergency Ration Can" data-product-category="supplies">
+          <div class="product-image">
+            <img src="assets/img/can.png" alt="Emergency Can" />
+            <button class="wishlist-btn" data-product="Emergency Ration Can" title="Add to Wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name glitch-random">Emergency Ration Can</h3>
+            <p class="product-description">Essential supplies for quarantine period</p>
+            <div class="product-price">$18.99</div>
+            <p class="shipping-notice">These products will be shipped sequentially after February 28, 2028.</p>
+            <div class="product-actions">
+              <button class="product-btn view-details-btn" data-product="Emergency Ration Can">View Details</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Air -->
+        <div class="product-card" data-product-name="Purified Air Supply" data-product-category="supplies">
+          <div class="product-image">
+            <img src="assets/img/air.png" alt="Clean Air" />
+            <button class="wishlist-btn" data-product="Purified Air Supply" title="Add to Wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name glitch-random">Purified Air Supply</h3>
+            <p class="product-description">Breathe clean in contaminated digital space</p>
+            <div class="product-price">$18.99</div>
+            <p class="shipping-notice">These products will be shipped sequentially after February 28, 2028.</p>
+            <div class="product-actions">
+              <button class="product-btn view-details-btn" data-product="Purified Air Supply">View Details</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: X-Ray -->
+        <div class="product-card" data-product-name="Digital X-Ray Scanner" data-product-category="scanner">
+          <div class="product-image">
+            <img src="assets/img/xray.png" alt="X-Ray Scanner" />
+            <button class="wishlist-btn" data-product="Digital X-Ray Scanner" title="Add to Wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name glitch-random">Digital X-Ray Scanner</h3>
+            <p class="product-description">Scan and identify hidden virus threats</p>
+            <div class="product-price">$18.99</div>
+            <p class="shipping-notice">These products will be shipped sequentially after February 28, 2028.</p>
+            <div class="product-actions">
+              <button class="product-btn view-details-btn" data-product="Digital X-Ray Scanner">View Details</button>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4 class="footer-title">H.V Organization</h4>
+        <p class="footer-text">Hate is Virus - Digital Pandemic Control</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Contact</h4>
+        <p class="footer-text">info@hateisvirus.org</p>
+        <p class="footer-text">Emergency: 24/7 Hotline</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Resources</h4>
+        <a href="#" class="footer-link">Protocols</a>
+        <a href="#" class="footer-link">Reports</a>
+        <a href="#" class="footer-link">Guidelines</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 H.V Organization. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

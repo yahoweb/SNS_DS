@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>H.V | About Virus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="content.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="selection.html">H.V</a>
+        <span class="logo-subtitle">Hate is Virus</span>
+      </div>
+      <nav class="header-nav">
+        <a href="about.html" class="nav-link active">About Virus</a>
+        <a href="company.html" class="nav-link">Company</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="cart.html" class="nav-link cart-link">
+          <span class="cart-icon">CART</span>
+          <span class="cart-count" id="header-cart-count">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <canvas id="noise-canvas"></canvas>
+  <div class="scan-line"></div>
+  
+  <div class="content-page">
+    <div class="content-wrapper">
+      <!-- VIRUS LOG SECTION -->
+      <section class="virus-log-section">
+        <div class="warning-header">
+          <h1 class="warning-title typing-text glitch-text" id="warning-title" data-text="WARNING: Digital Pathogen Detected">WARNING: Digital Pathogen Detected</h1>
+          <div class="classification-code">
+            <span class="code-label">Classification Code:</span>
+            <span class="code-value glitch-random">HATE-25</span>
+            <span class="code-label">Vector:</span>
+            <span class="code-value glitch-random">Comments & Chats</span>
+          </div>
+        </div>
+
+        <div class="quote-text typing-text" id="quote-text">
+          Do not mistake this for emotion, This is <span class="highlight-critical">infection</span>
+        </div>
+
+        <div class="virus-description">
+          <p>This <span class="highlight-virus">virus</span> (Hate) inhabits within the massive petri dish of social networks. The primary <span class="highlight-warning">transmission route</span> is your fingertips and the 'comment section'.</p>
+        </div>
+
+        <!-- SYMPTOMS SECTION -->
+        <div class="symptoms-section">
+          <h2 class="section-title glitch-random">Clinical Manifestation</h2>
+          
+          <div class="symptom-card">
+            <h3 class="symptom-title">The Spreader</h3>
+            <p class="symptom-description">Addiction symptoms of obtaining dopamine through criticism of others. Rapid necrosis of humanity. Ultimately, an autoimmune disease-like outcome that <span class="highlight-critical">destroys</span> one's inner self.</p>
+          </div>
+
+          <div class="symptom-card">
+            <h3 class="symptom-title">The Receiver</h3>
+            <p class="symptom-description">Psychological <span class="highlight-critical">trauma</span> from indiscriminate text attacks. Self-esteem paralysis and social isolation.</p>
+          </div>
+        </div>
+
+        <div class="conclusion-text">
+          <p>This is not simply malicious comments. The moment you type and press Enter, it is a fatal <span class="highlight-critical">mutual destruction</span> <span class="highlight-virus">virus</span> that invades both your and the other person's brain.</p>
+        </div>
+      </section>
+
+      <!-- DASHBOARD SECTION -->
+      <section class="dashboard-section">
+        <h2 class="section-title glitch-random">Virus Monitoring Dashboard</h2>
+        
+        <!-- STATS CARDS -->
+        <div class="dashboard-grid">
+          <div class="stat-card">
+            <div class="stat-info">
+              <div class="stat-label">Global Infections</div>
+              <div class="stat-number" id="stat-1">0</div>
+              <div class="stat-change positive">+12.3%</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-info">
+              <div class="stat-label">Daily New Cases</div>
+              <div class="stat-number" id="stat-2">0</div>
+              <div class="stat-change positive">+8.7%</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-info">
+              <div class="stat-label">Active Outbreaks</div>
+              <div class="stat-number" id="stat-3">0</div>
+              <div class="stat-change critical glitch-random">CRITICAL</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-info">
+              <div class="stat-label">Recovery Rate</div>
+              <div class="stat-number" id="stat-4">0</div>
+              <div class="stat-change">%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIVE MONITOR -->
+        <div class="monitor-card">
+          <div class="card-header">
+            <h3 class="card-title">Live Infection Counter</h3>
+            <span class="card-status live">LIVE</span>
+          </div>
+          <div class="counter-display">
+            <div class="counter-number" id="live-counter">0</div>
+            <div class="counter-label">Total Infections</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATA VISUALIZATION -->
+      <section class="data-section">
+        <h2 class="section-title glitch-random">Spread Analysis</h2>
+        
+        <div class="chart-container">
+          <div class="chart-card">
+            <h3 class="chart-title">Daily Cases Trend</h3>
+            <div class="bar-chart">
+              <div class="bar" style="height: 85%;" data-value="8500">
+                <span class="bar-value">8,500</span>
+              </div>
+              <div class="bar" style="height: 70%;" data-value="7000">
+                <span class="bar-value">7,000</span>
+              </div>
+              <div class="bar" style="height: 95%;" data-value="9500">
+                <span class="bar-value">9,500</span>
+              </div>
+              <div class="bar" style="height: 60%;" data-value="6000">
+                <span class="bar-value">6,000</span>
+              </div>
+              <div class="bar" style="height: 100%;" data-value="10000">
+                <span class="bar-value">10,000</span>
+              </div>
+              <div class="bar" style="height: 75%;" data-value="7500">
+                <span class="bar-value">7,500</span>
+              </div>
+              <div class="bar" style="height: 90%;" data-value="9000">
+                <span class="bar-value">9,000</span>
+              </div>
+            </div>
+            <div class="chart-labels">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <h3 class="chart-title">Platform Distribution</h3>
+            <div class="pie-chart-wrapper">
+              <svg class="pie-svg" viewBox="0 0 200 200">
+                <circle class="pie-background" cx="100" cy="100" r="80" />
+                <circle class="pie-segment segment-1" cx="100" cy="100" r="80" />
+                <circle class="pie-segment segment-2" cx="100" cy="100" r="80" />
+                <circle class="pie-segment segment-3" cx="100" cy="100" r="80" />
+              </svg>
+              <div class="pie-legend">
+                <div class="legend-item">
+                  <span class="legend-color" style="background: var(--yellow);"></span>
+                  <span>Instagram - 45%</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #ff6b6b;"></span>
+                  <span>Facebook - 30%</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color" style="background: #4ecdc4;"></span>
+                  <span>TikTok - 25%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE ELEMENTS -->
+      <section class="interactive-section">
+        <div class="interactive-grid">
+          <!-- VIRUS SIMULATION -->
+          <div class="interactive-card">
+            <h3 class="card-title">Virus Spread Simulation</h3>
+            <p class="card-subtitle">Type command and press ENTER to spread virus</p>
+            <div class="command-input-wrapper">
+              <div class="command-prompt">H.V></div>
+              <input type="text" class="command-input" id="command-input" placeholder="Type command here..." autocomplete="off" />
+            </div>
+            <div class="simulation-area" id="simulation-area"></div>
+          </div>
+
+          <!-- INTERACTIVE MAP -->
+          <div class="interactive-card">
+            <h3 class="card-title">Global Spread Map</h3>
+            <p class="card-subtitle">Click groups for details</p>
+            <div class="interactive-map">
+              <div class="map-point" style="top: 20%; left: 15%;" data-count="3247891">
+                <div class="point-pulse"></div>
+                <div class="point-label">Group A</div>
+              </div>
+              <div class="map-point" style="top: 45%; left: 50%;" data-count="2156432">
+                <div class="point-pulse"></div>
+                <div class="point-label">Group B</div>
+              </div>
+              <div class="map-point" style="top: 70%; left: 75%;" data-count="1842608">
+                <div class="point-pulse"></div>
+                <div class="point-label">Group C</div>
+              </div>
+              <div class="map-point" style="top: 30%; left: 60%;" data-count="987654">
+                <div class="point-pulse"></div>
+                <div class="point-label">Group D</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4 class="footer-title">H.V Organization</h4>
+        <p class="footer-text">Hate is Virus - Digital Pandemic Control</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Contact</h4>
+        <p class="footer-text">info@hateisvirus.org</p>
+        <p class="footer-text">Emergency: 24/7 Hotline</p>
+      </div>
+      <div class="footer-section">
+        <h4 class="footer-title">Resources</h4>
+        <a href="#" class="footer-link">Protocols</a>
+        <a href="#" class="footer-link">Reports</a>
+        <a href="#" class="footer-link">Guidelines</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 H.V Organization. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
